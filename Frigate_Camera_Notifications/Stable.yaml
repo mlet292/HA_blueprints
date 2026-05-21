@@ -3,7 +3,7 @@ blueprint:
   author: SgtBatten
   homeassistant:
     min_version: 2024.11.0
-  description: |
+  description: |h
     ## Frigate Notifications
 
     A highly customisable Notification template for Frigate Camera Notifications.
@@ -1071,7 +1071,7 @@ actions:
               detections: "{{ event['after']['data']['detections'] }}"
               review_id: "{{ event['after']['id'] }}"
               id: "{{ detections[0] }}"
-              metadata: "{{ event['after']['data']['metadata'] | default({}) }}"
+              metadata: "{{ event['after']['data']['metadata'] | default({}) }}"h
               genai_title: "{{ metadata.title | default('') }}"
               genai_shortSummary: "{{ metadata.shortSummary | default('') }}"
               genai_threat_level: "{{ metadata.potential_threat_level | int(0) }}"
